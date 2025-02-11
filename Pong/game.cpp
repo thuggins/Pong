@@ -13,7 +13,7 @@ internal void
 simulate_game(Input* input, float dt)
 {
 	clear_screen(0xff5500);
-	draw_rect(0, 0, arena_half_size_x, arena_half_size_y, 0x11aaff);
+	draw_rect(0, 0, arena_half_size_x, arena_half_size_y, 0xaaaaff);
 
 	float player_1_ddp = 0.f; 
 	if (is_down(BUTTON_UP)) player_1_ddp += 2000;
