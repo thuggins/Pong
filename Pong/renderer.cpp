@@ -141,6 +141,5 @@ draw_number(int number, float x, float y, float size, u32 color) {
 			x -= size * 4.f;
 		} break;
 		}
-
 	}
 }
