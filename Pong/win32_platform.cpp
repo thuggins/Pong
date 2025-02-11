@@ -103,7 +103,7 @@ int WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int n
 				case WM_KEYDOWN:
 				{
 					u32 vk_code = (u32)message.wParam;
-					bool is_down = ((message.lParam & (1 << 31)) == 0);
+					bool is_down = ((message.lParam & (static_cast<long long>(1) << 31)) == 0);
 
 #define process_button(b, vk)\
 case vk: \
