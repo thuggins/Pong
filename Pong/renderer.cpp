@@ -55,7 +55,8 @@ draw_number(int number, float x, float y, float size, u32 color) {
 	float half_size = size * .5f;
 
 	bool drew_number = false;
-	while (number || !drew_number) {
+	while (number || !drew_number) 
+	{
 		drew_number = true;
 
 		int digit = number % 10;
